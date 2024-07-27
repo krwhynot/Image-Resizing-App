@@ -19,12 +19,14 @@
   <script src="./dist/main.js" type="text/javascript"></script>
     <script>
         (async function () {
-            const {url, sasKey} = (await fetch("/api/credentials")).json();
+            const {url, sasKey} = await (await fetch(`/api/credentials`)).json();
             document.querySelector('#name').textContent = `SAS Key: ${sasKey}` + "\n" + `URL: ${url}`;
+
             function uploadFile() {
                 const file = document.getElementById('image').files[0];
                 blobUpload(file, url, 'images', sasKey);
-            };
+            }
+            
             const fileInput = document.getElementById('image');
             fileInput.addEventListener("change", uploadFile);
         }())

@@ -1,3 +1,6 @@
+
+
+// This function generates a SAS token for the images container in the storage account.
 const {
     StorageSharedKeyCredential,
     ContainerSASPermissions,
@@ -14,6 +17,8 @@ const { extractConnectionStringParts } = require('./utils.js');
     context.done();
 };
 
+
+//Generating shared access signatures (SAS) is a common pattern when working with Azure Storage.
 function generateSasToken(connectionString, container, permissions) {
     const { accountKey, accountName, url } = extractConnectionStringParts(connectionString);
     const sharedKeyCredential = new StorageSharedKeyCredential(accountName, accountKey.toString('base64'));

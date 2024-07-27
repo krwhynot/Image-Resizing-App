@@ -1,0 +1,168 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": {
+                "type": "String",
+                "value": "southcentralus"
+            }
+        },
+        "storageAccountName": {
+            "value": {
+                "type": "String",
+                "value": "uploadimg1985"
+            }
+        },
+        "accountType": {
+            "value": {
+                "type": "String",
+                "value": "Standard_GRS"
+            }
+        },
+        "kind": {
+            "value": {
+                "type": "String",
+                "value": "StorageV2"
+            }
+        },
+        "minimumTlsVersion": {
+            "value": {
+                "type": "String",
+                "value": "TLS1_2"
+            }
+        },
+        "supportsHttpsTrafficOnly": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "allowBlobPublicAccess": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "allowSharedKeyAccess": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "defaultOAuth": {
+            "value": {
+                "type": "Bool",
+                "value": false
+            }
+        },
+        "accessTier": {
+            "value": {
+                "type": "String",
+                "value": "Hot"
+            }
+        },
+        "publicNetworkAccess": {
+            "value": {
+                "type": "String",
+                "value": "Enabled"
+            }
+        },
+        "allowCrossTenantReplication": {
+            "value": {
+                "type": "Bool",
+                "value": false
+            }
+        },
+        "networkAclsBypass": {
+            "value": {
+                "type": "String",
+                "value": "AzureServices"
+            }
+        },
+        "networkAclsDefaultAction": {
+            "value": {
+                "type": "String",
+                "value": "Allow"
+            }
+        },
+        "networkAclsIpRules": {
+            "value": {
+                "type": "Array",
+                "value": []
+            }
+        },
+        "dnsEndpointType": {
+            "value": {
+                "type": "String",
+                "value": "Standard"
+            }
+        },
+        "largeFileSharesState": {
+            "value": {
+                "type": "String",
+                "value": "Enabled"
+            }
+        },
+        "keySource": {
+            "value": {
+                "type": "String",
+                "value": "Microsoft.Storage"
+            }
+        },
+        "encryptionEnabled": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "keyTypeForTableAndQueueEncryption": {
+            "value": {
+                "type": "String",
+                "value": "Account"
+            }
+        },
+        "infrastructureEncryptionEnabled": {
+            "value": {
+                "type": "Bool",
+                "value": false
+            }
+        },
+        "isBlobSoftDeleteEnabled": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "blobSoftDeleteRetentionDays": {
+            "value": {
+                "type": "Int",
+                "value": 7
+            }
+        },
+        "isContainerSoftDeleteEnabled": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "containerSoftDeleteRetentionDays": {
+            "value": {
+                "type": "Int",
+                "value": 7
+            }
+        },
+        "isShareSoftDeleteEnabled": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "shareSoftDeleteRetentionDays": {
+            "value": {
+                "type": "Int",
+                "value": 7
+            }
+        }
+    }
+}
